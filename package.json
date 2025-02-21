@@ -1,0 +1,40 @@
+{
+    "name": "pracsys-front-end",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@hookform/resolvers": "^3.3.7",
+      "@shadcn/ui": "latest",
+      "@tanstack/react-query": "^4.35.4",
+      "axios": "^1.6.5",
+      "bcryptjs": "^2.4.3",
+      "clsx": "^2.1.0",
+      "lucide-react": "^0.336.0",
+      "next": "^15.1.7",
+      "next-auth": "^4.23.1",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "react-hook-form": "^7.45.2",
+      "tailwind-merge": "^2.2.1",
+      "tailwindcss": "^3.4.1",
+      "zod": "^3.22.4"
+    },
+    "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
+      "@types/node": "latest",
+      "@types/react": "latest",
+      "autoprefixer": "^10.4.16",
+      "eslint": "latest",
+      "eslint-config-next": "latest",
+      "postcss": "^8.4.36",
+      "tailwindcss": "^3.4.1",
+      "typescript": "latest"
+    }
+  }
+  
