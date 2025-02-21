@@ -1,8 +1,13 @@
-export default function Navbar() {
-    return (
-      <nav className="bg-blue-500 text-white p-4">
-        <h1 className="text-lg font-bold">Prior Auth Tracker</h1>
-      </nav>
-    );
-  }
-  
+import { FaUserCircle } from "react-icons/fa";
+
+const Navbar = () => {
+  return (
+    <header className="bg-white shadow-md p-4 flex justify-between items-center rounded-lg">
+      <div className="flex items-center space-x-4 w-full">
+        <FaUserCircle className="text-gray-600 text-2xl cursor-pointer" />
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
