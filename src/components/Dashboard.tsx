@@ -1,8 +1,9 @@
 import React from 'react';
+import { FaUserCircle, FaSearch } from "react-icons/fa";
 
 const Dashboard = () => {
   return (
-    <div className="p-6 bg-gradient-to-r from-green-50 to-pink-50 min-h-screen">
+    <div>
       {/* Search Bar */}
       <div className="flex justify-between items-center mb-6">
         <div className="relative flex-grow">
@@ -11,10 +12,10 @@ const Dashboard = () => {
             placeholder="Search something here..."
             className="p-2 w-full border rounded-md pl-10"
           />
-          <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600">🔍</span>
+          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
         </div>
         <div className="ml-4">
-          <span className="text-gray-600">👤</span>
+          <FaUserCircle className="text-gray-600" size={24} />
         </div>
       </div>
 
@@ -22,8 +23,8 @@ const Dashboard = () => {
       <div className="grid grid-cols-3 gap-4">
         {/* Average Processing Times */}
         <div className="bg-white p-4 shadow-md rounded-md col-span-1">
-          <h2 className="text-lg font-semibold text-[#86b289]">Average processing times</h2>
-          <ul className="mt-2 text-[#86b289] text-sm">
+          <h2 className="text-xl font-semibold text-[#86b289]">Average processing times</h2>
+          <ul className="mt-2 text-[#86b289] text-lg">
             <li>1. Cigna: 7 minutes</li>
             <li>2. Arkansas BCBS: 10 minutes</li>
             <li>3. Aetna: 30 minutes</li>
@@ -68,181 +69,181 @@ const Dashboard = () => {
       </div>
 
 {/* Ready for Review Table */}
-<div className="w-[800px] h-auto bg-[#86b289] flex-col justify-start items-start inline-flex mt-10 mx-auto rounded-lg">
+<div className="w-full h-auto bg-[#f9f9f9] flex-col justify-start items-start inline-flex mt-10 mx-auto rounded-[15px]">
   <div className="self-stretch bg-white rounded border border-[#86b289] flex-col justify-start items-start flex overflow-hidden">
     <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
       <div className="grow shrink basis-0 self-stretch bg-black/5 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-semibold font-['Inter'] leading-none">Name of Patient</div>
+          <div className="grow shrink basis-0 text-black text-lg font-semibold font-['Inter'] leading-none">Name of Patient</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-black/5 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-semibold font-['Inter'] leading-none">Test Ordered</div>
+          <div className="grow shrink basis-0 text-black text-lg font-semibold font-['Inter'] leading-none">Test Ordered</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-black/5 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-semibold font-['Inter'] leading-none">Test Order Date</div>
+          <div className="grow shrink basis-0 text-black text-lg font-semibold font-['Inter'] leading-none">Test Order Date</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-black/5 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-semibold font-['Inter'] leading-none">Auth Status</div>
+          <div className="grow shrink basis-0 text-black text-lg font-semibold font-['Inter'] leading-none">Auth Status</div>
         </div>
       </div>
     </div>
     <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Adam Smith</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Adam Smith</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Chest CT w/ Contrast</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Chest CT w/ Contrast</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/09/2025</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/09/2025</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
-        </div>
-      </div>
-    </div>
-    <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Floyd Miles</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Echocardiogram</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/10/2025</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
         </div>
       </div>
     </div>
     <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Ronald Richards</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Floyd Miles</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Holter Monitor</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Echocardiogram</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/10/2025</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/10/2025</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
-        </div>
-      </div>
-    </div>
-    <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Marvin McKinney</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Cardiac Catheterization</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/10/2025</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
         </div>
       </div>
     </div>
     <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Jerome Bell</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Ronald Richards</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Echocardiogram</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Holter Monitor</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/10/2025</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/10/2025</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
-        </div>
-      </div>
-    </div>
-    <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Kathryn Murphy</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Echocardiogram</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/10/2025</div>
-        </div>
-      </div>
-      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
-        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
         </div>
       </div>
     </div>
     <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Jacob Jones</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Marvin McKinney</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pacemaker Implantation</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Cardiac Catheterization</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">02/10/2025</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/10/2025</div>
         </div>
       </div>
       <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
         <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
-          <div className="grow shrink basis-0 text-black text-xs font-normal font-['Inter'] leading-none">Pending</div>
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
+        </div>
+      </div>
+    </div>
+    <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Jerome Bell</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Echocardiogram</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/10/2025</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
+        </div>
+      </div>
+    </div>
+    <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Kathryn Murphy</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Echocardiogram</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/10/2025</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
+        </div>
+      </div>
+    </div>
+    <div className="self-stretch bg-white/0 justify-start items-start inline-flex overflow-hidden">
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Jacob Jones</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pacemaker Implantation</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">02/10/2025</div>
+        </div>
+      </div>
+      <div className="grow shrink basis-0 self-stretch bg-white/0 border-l border-t border-[#86b289] flex-col justify-center items-start inline-flex">
+        <div className="self-stretch px-3 py-2.5 justify-start items-start inline-flex overflow-hidden">
+          <div className="grow shrink basis-0 text-black text-base font-normal font-['Inter'] leading-none">Pending</div>
         </div>
       </div>
     </div>
