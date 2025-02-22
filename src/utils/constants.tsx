@@ -1,3 +1,5 @@
+// Read this 2nd
+
 // Constants are also great
 // Why?
 // - You can create test data easily
@@ -6,13 +8,13 @@
 
 
 // One test processing time
-const TEST_PROCESSING_TIME: ProcessingTime = {
+export const TEST_PROCESSING_TIME: ProcessingTime = {
     providerName: 'Cigna',
     processingTime: 20
 }
 
 // More realistically, you backend will send a list of processing times
-const TEST_PROCESSING_TIMES: ProcessingTime[]  = [
+export const TEST_PROCESSING_TIMES: ProcessingTime[]  = [
     {
         providerName: 'Cigna',
         processingTime: 20
@@ -32,7 +34,7 @@ const TEST_PROCESSING_TIMES: ProcessingTime[]  = [
 ]
 
 // Similarly you can create a test claim
-const TEST_CLAIM: Claim = {
+export const TEST_CLAIM: Claim = {
     id: '1',
     patientName: 'Adam Smith',
     testOrderedName: 'Chest CT w/ Contrast',
@@ -41,7 +43,7 @@ const TEST_CLAIM: Claim = {
 }
 
 // Again, more realistically your backend will send a list of claims
-const TEST_CLAIMS: Claim[] = [
+export const TEST_CLAIMS: Claim[] = [
     {
         id: '1',
         patientName: 'Adam Smith',

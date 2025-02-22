@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaUserCircle, FaSearch } from "react-icons/fa";
+import ProcessingTimes from './ProcessingTimes';
+import { TEST_PROCESSING_TIMES } from 'utils/constants';
 
 const Dashboard = () => {
   return (
@@ -22,16 +24,7 @@ const Dashboard = () => {
       {/* Main Dashboard Content */}
       <div className="grid grid-cols-3 gap-4">
         {/* Average Processing Times */}
-        <div className="bg-white p-4 shadow-md rounded-md col-span-1">
-          <h2 className="text-xl font-semibold text-[#86b289]">Average processing times</h2>
-          <ul className="mt-2 text-[#86b289] text-lg">
-            <li>1. Cigna: 7 minutes</li>
-            <li>2. Arkansas BCBS: 10 minutes</li>
-            <li>3. Aetna: 30 minutes</li>
-            <li>4. UHC: 3 hours</li>
-            <li>5. Humana: 7 minutes</li>
-          </ul>
-        </div>
+        <ProcessingTimes items={TEST_PROCESSING_TIMES} />
 
         {/* Statistics */}
         <div className="bg-white p-4 shadow-md rounded-md col-span-2 flex justify-around items-center">
