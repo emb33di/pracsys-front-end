@@ -44,7 +44,7 @@ type ProcessingTimeItemParams = {
 function ProcessingTimeItem({ item }: ProcessingTimeItemParams) {
     return (
         <li>
-            {item.providerName} : {item.processingTime} minutes
+            {item.providerName} : {item.processingTime} minutes - {item.completedRequests} requests
         </li>
     )
 }

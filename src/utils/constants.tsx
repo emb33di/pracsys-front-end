@@ -10,26 +10,31 @@
 // One test processing time
 export const TEST_PROCESSING_TIME: ProcessingTime = {
     providerName: 'Cigna',
-    processingTime: 20
+    processingTime: 20,
+    completedRequests: 0
 }
 
 // More realistically, you backend will send a list of processing times
 export const TEST_PROCESSING_TIMES: ProcessingTime[]  = [
     {
         providerName: 'Cigna',
-        processingTime: 20
+        processingTime: 20,
+        completedRequests: 30
     },
     {
         providerName: 'Aetna',
-        processingTime: 30
+        processingTime: 30,
+        completedRequests: 1
     },
     {
         providerName: 'UHC',
-        processingTime: 5
+        processingTime: 5,
+        completedRequests: 5
     },
     {
         providerName: 'Arkansas BCBS',
-        processingTime: 15
+        processingTime: 15,
+        completedRequests: 10
     },
 ]
 
@@ -49,27 +54,35 @@ export const TEST_CLAIMS: Claim[] = [
         patientName: 'Adam Smith',
         testOrderedName: 'Chest CT w/ Contrast',
         testOrderDate: new Date(2024, 8, 2),
-        authorizationStatu: 'draft'
+        authorizationStatu: 'Draft'
     },
     {
         id: '2',
         patientName: 'Floyd Miles',
         testOrderedName: 'Echocardiogram',
         testOrderDate: new Date(2023, 10, 4),
-        authorizationStatu: 'pending'
+        authorizationStatu: 'Pending'
     },
     {
         id: '3',
         patientName: 'Ronald Richards',
         testOrderedName: 'Holter Monitor',
         testOrderDate: new Date(2024, 7, 20),
-        authorizationStatu: 'pending'
+        authorizationStatu: 'Pending'
     },
     {
         id: '4',
         patientName: 'Marvin McKinney',
         testOrderedName: 'Cardiac Catheterization',
         testOrderDate: new Date(2025, 1, 2),
-        authorizationStatu: 'complete'
+        authorizationStatu: 'Complete'
     },
+
+    {
+        id: '5',
+        patientName: 'John Ralls',
+        testOrderedName: 'Coronary Angiogram',
+        testOrderDate: new Date(2025, 1, 2),
+        authorizationStatu: 'Draft'
+    }
 ]

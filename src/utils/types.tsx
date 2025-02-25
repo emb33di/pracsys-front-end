@@ -8,7 +8,8 @@
 
 type ProcessingTime = {
     providerName: string,
-    processingTime: number
+    processingTime: number,
+    completedRequests: number
 }
 
 type Claim = {
@@ -16,6 +17,6 @@ type Claim = {
     patientName: string,
     testOrderedName: string,
     testOrderDate: Date
-    authorizationStatu: 'draft' | 'pending' | 'complete'
+    authorizationStatu: 'Draft' | 'Pending' | 'Complete'
 }
 
