@@ -17,6 +17,6 @@ type Claim = {
     patientName: string,
     testOrderedName: string,
     testOrderDate: Date
-    authorizationStatu: 'Draft' | 'Pending' | 'Complete'
+    authorizationStatus: 'Draft' | 'Pending' | 'Complete'
 }
 

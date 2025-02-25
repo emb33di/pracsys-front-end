@@ -7,14 +7,14 @@ const StatsDash: React.FC = () => {
       <div className="relative w-[185px] h-[215px]">
         <div
           className="absolute w-[185px] h-[185px] left-0 top-0 rounded-full"
-          style={{ borderWidth: '16px', borderColor: '#b9d6bb' }}
+          style={{ borderWidth: '16px', borderColor: '#b9d6bb', borderStyle: 'solid' }}
         />
         <div className="absolute w-[105px] h-[69px] left-[40px] top-[58px] text-center text-[#86b289]">
-          <Text style={{ fontSize: '3rem', fontWeight: 700, color: '#86b289', lineHeight: '57.60px' }}>
+          <Text style={{ fontSize: '2.5rem', fontWeight: 700, color: '#86b289', lineHeight: '57.60px' }}>
             {percentage}
           </Text>
         </div>
-        <div className="absolute w-[185px] h-[15px] left-0 top-[200px] text-center text-[#86b289] text-lg font-bold leading-normal">
+        <div className="absolute w-[250px] h-[15px] left-[-25px] top-[190px] text-center text-[#86b289] text-2xl font-bold leading-normal">
           {label}
         </div>
       </div>
@@ -30,13 +30,13 @@ const StatsDash: React.FC = () => {
           sections={[{ value: percentage, color: '#b9d6bb' }]}
           label={
             <Center>
-              <Text style={{ fontSize: '3rem', fontWeight: 700, color: '#86b289', lineHeight: '57.60px' }}>
+              <Text style={{ fontSize: '2.5rem', fontWeight: 700, color: '#86b289', lineHeight: '57.60px' }}>
                 {percentage}%
               </Text>
             </Center>
           }
         />
-        <div className="absolute w-[185px] h-[15px] left-0 top-[200px] text-center text-[#86b289] text-lg font-bold leading-normal">
+        <div className="absolute w-[250px] h-[15px] left-[-20px] top-[190px] text-center text-[#86b289] text-2xl font-bold leading-normal">
           {label}
         </div>
       </div>
