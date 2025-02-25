@@ -24,16 +24,16 @@ type ProcessingTimesProps = {
 
 export default function ProcessingTimes({ items }: ProcessingTimesProps) {
     return (
-    <div className="bg-white p-4 shadow-md rounded-md col-span-1">
-        <h2 className="text-xl font-semibold text-[#86b289]">
-            Average processing times
-        </h2>
-        <ul className="mt-2 text-[#86b289] text-lg">
-            {
-                items.map((item) => <ProcessingTimeItem item={item} />)
-            }
-        </ul>
-    </div>
+        <div className="bg-white p-4 shadow-md rounded-md col-span-1">
+            <h2 className="text-xl font-semibold text-[#86b289]">
+                Average processing times
+            </h2>
+            <ul className="mt-2 text-[#86b289] text-lg">
+                {
+                    items.map((item) => <ProcessingTimeItem key={item.providerName} item={item} />)
+                }
+            </ul>
+        </div>
     )
 }
 
